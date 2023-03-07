@@ -13,16 +13,16 @@ function solveEquation(a, b, c) {
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   if (isNaN(percent)) {
-    return "percent is not a number";
+    return false;
   }
   if (isNaN(contribution)) {
-    return "contribution is not a number";
+    return false;
   }
   if (isNaN(amount)) {
-    return "amount is not a number";
+    return false;
   }
   if (isNaN(countMonths)) {
-    return "countMonths is not a number";
+    return false;
   }
   let monthPercent = percent / 100 / 12;
   let creditBody = amount - contribution;
